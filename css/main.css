@@ -10,6 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
+  font: normal 100%/1.3 Merriweather, serif;
 }
 
 *, *::before, *::after {
@@ -18,4 +19,15 @@ html {
 
 body {
   margin: 0;
+}
+
+.candy-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.candy-left, .candy-right {
+  width: 50px;
+  height: 50px;
+  margin: .5em 0;
 }
