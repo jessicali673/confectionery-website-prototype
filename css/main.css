@@ -43,6 +43,7 @@ header {
 header h1 {
   font-size: 2rem;
   text-align: center;
+  margin: 1rem auto;
 }
 
 .header-nav ul {
@@ -59,40 +60,32 @@ header h1 {
 }
 
 .header-nav a {
+  color: #fff;
   display: block;
   text-decoration: none;
-  padding: .5em .75em;
+  padding: .2em .75em;
   white-space: nowrap;
 }
 
 .header-nav a:hover {
-  color: #333;
-  background-color: #222;
+  color: #fff;
+  background-color: #a23f42;
 }
 
 .banner-img-flex {
   display: block;
   width: 100%;
-  position: relative;
 }
 
 .welcome-banner {
   max-height: 500px;
-  position: relative;
-  overflow: hidden;
 }
 
 .banner-content {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
   margin: 1rem;
   padding-bottom: 1rem;
   max-width: 45em;
   width: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .welcome-main {
@@ -103,10 +96,7 @@ header h1 {
 }
 
 .beau-logo {
-  display: block;
-  width: 40%;
-  text-align: center;
-  margin-right: 1rem;
+  display: none;
 }
 
 .welcome-banner h2 {
@@ -123,7 +113,7 @@ header h1 {
 }
 
 .welcome-btn {
-  font-size: 1rem;
+  font-size: .8rem;
   display: inline-block;
   border: 3px solid #333;
   border-radius: 8px;
@@ -133,7 +123,7 @@ header h1 {
 }
 
 .learn-btn {
-  font-size: 1rem;
+  font-size: .8rem;
   color: #fff;
   text-decoration: none;
 }
@@ -158,6 +148,13 @@ header h1 {
     text-align: center;
   }
 
+  .welcome-main h2 {
+    margin-bottom: 0;
+  }
+
+  .welcome-btn {
+    margin-top: .3em;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -177,6 +174,36 @@ header h1 {
 
   .header-nav ul {
     justify-content: space-around;
+  }
+
+  .welcome-banner {
+    position: relative;
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .banner-content {
+    position: absolute;
+    display: flex;
+    margin: auto;
+    padding-bottom: 1rem;
+    max-width: 45em;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .welcome-main {
+    align-items: center;
+    width: 100%;
+    display: inline-block;
+    margin-left: 1.5rem;
+  }
+
+  .beau-logo {
+    display: block;
+    width: 50%;
   }
 
 }
