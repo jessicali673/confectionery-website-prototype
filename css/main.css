@@ -146,6 +146,43 @@ header h1 {
   display: none;
 }
 
+  .flavour-nav {
+    list-style-type: none;
+    text-align: center;
+    font-weight: 100;
+    font-size: .8rem;
+  }
+
+  .flavour-nav ul {
+    padding: 0;
+  }
+
+  .flavour-nav li {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flavour-nav a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background-color: #ff5c6f;
+    padding: .4em .5em;
+    border-radius: 4px;
+    margin: .2rem;
+    padding: 1em .5em;
+  }
+
+  .flavour-nav a:hover {
+    background-color: #cc1465;
+    color: #fff;
+    border-color: #cc1465;
+    padding: .4em .5em;
+    text-align: center;
+    border-radius: 4px;
+  }
+
 @media only screen and (min-width: 25em) {
 
   nav {
@@ -259,6 +296,18 @@ header h1 {
 
   .photo:nth-child(2), .photo:nth-child(3), .photo:nth-child(4) {
     width: 33.333%;
+  }
+
+  .flavour-nav {
+    flex-wrap: nowrap;
+  }
+
+  .flavour-nav li {
+    width: 25%;
+  }
+
+  .flavour-nav ul {
+    justify-content: space-around;
   }
 
 }
