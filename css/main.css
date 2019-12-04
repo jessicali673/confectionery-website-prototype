@@ -80,6 +80,7 @@ header h1 {
 
 .welcome-banner {
   max-height: 500px;
+  margin-bottom: 1rem;
 }
 
 .banner-content {
@@ -98,6 +99,7 @@ header h1 {
 
 .beau-logo {
   display: none;
+  margin-left: 1rem;
 }
 
 .welcome-banner h2 {
@@ -109,8 +111,7 @@ header h1 {
 .welcome-banner p {
   font-size: .875rem;
   margin: 0;
-  padding-top: .5rem;
-  padding-right: 3.5rem;
+  padding: .5rem 3.5rem .5rem 0;
 }
 
 .welcome-btn {
@@ -203,6 +204,8 @@ header h1 {
   flex-direction: column;
   margin: .75rem;
   padding: 0;
+  max-width: 25em;
+  margin: 0 auto;
 }
 
 .featured-nav li {
@@ -234,6 +237,14 @@ header h1 {
   text-align: center;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .card-img {
   border: solid 4px #ffa6a6;
   border-radius: 8px;
@@ -247,6 +258,12 @@ footer {
   color: #fff;
 }
 
+.candy-large {
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin: .5em 0;
+}
 
 @media only screen and (min-width: 25em) {
 
@@ -259,8 +276,9 @@ footer {
     flex-wrap: wrap;
   }
 
-  nav li {
+  .header-nav li {
     width: 50%;
+    display: inline-block;
     text-align: center;
   }
 
@@ -270,6 +288,7 @@ footer {
 
   .welcome-btn {
     margin-top: .3em;
+    margin-bottom: 1em;
   }
 
   .img-grid {
@@ -298,6 +317,19 @@ footer {
     flex-direction: row;
   }
 
+
+  .flavour-nav {
+    flex-wrap: nowrap;
+  }
+
+  .flavour-nav li {
+    width: 25%;
+  }
+
+  .flavour-nav ul {
+    justify-content: space-around;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -323,6 +355,7 @@ footer {
     position: relative;
     max-height: 500px;
     overflow: hidden;
+    margin-bottom: 0;
   }
 
   .banner-content {
@@ -364,7 +397,8 @@ footer {
   }
 
   .featured-nav ul {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
   }
 
@@ -411,6 +445,22 @@ footer {
   .photo:nth-child(3), .photo:nth-child(2), .photo:nth-child(4), {
     display: block;
     width: 33.3333%;
+  }
+
+  .candy-right {
+    display: none;
+  }
+
+  .candy-large {
+    display: inline-block;
+  }
+
+  .featured-nav ul {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    max-width: 80em;
+    margin: 0 auto;
   }
 
 }
