@@ -19,6 +19,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #ffeeee;
 }
 
 header {
@@ -115,9 +116,9 @@ header h1 {
 .welcome-btn {
   font-size: .8rem;
   display: inline-block;
-  border: 3px solid #333;
+  border: 3px solid #ff5c6f;
   border-radius: 8px;
-  background-color: #333;
+  background-color: #ff5c6f;
   padding: .6em .85em;
   margin: 1rem 0;
 }
@@ -129,7 +130,9 @@ header h1 {
 }
 
 .welcome-btn:hover {
-  background-color: #000;
+  background-color: #a23f42;
+  border: 3px solid #a23f42;
+  padding: .6em .85em;
 }
 
 .beau-photo {
@@ -146,42 +149,104 @@ header h1 {
   display: none;
 }
 
-  .flavour-nav {
-    list-style-type: none;
-    text-align: center;
-    font-weight: 100;
-    font-size: .8rem;
-  }
+.flavour-nav {
+  list-style-type: none;
+  text-align: center;
+  font-weight: 100;
+  font-size: .8rem;
+}
 
-  .flavour-nav ul {
-    padding: 0;
-  }
+.flavour-nav ul {
+  padding: 0;
+}
 
-  .flavour-nav li {
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-  }
+.flavour-nav li {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+}
 
-  .flavour-nav a {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    background-color: #ff5c6f;
-    padding: .4em .5em;
-    border-radius: 4px;
-    margin: .2rem;
-    padding: 1em .5em;
-  }
+.flavour-nav a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  background-color: #ff5c6f;
+  border-radius: 4px;
+  margin: .2rem;
+  padding: 1em .5em;
+}
 
-  .flavour-nav a:hover {
-    background-color: #cc1465;
-    color: #fff;
-    border-color: #cc1465;
-    padding: .4em .5em;
-    text-align: center;
-    border-radius: 4px;
-  }
+.flavour-nav a:hover {
+  background-color: #a23f42;
+  color: #fff;
+  border-color: #a23f42;
+  padding: 1em .5em;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.card-body h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.card-body p {
+  font-size: .8rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+.featured-nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: .75rem;
+  padding: 0;
+}
+
+.featured-nav li {
+  padding: 0 1em;
+  margin-bottom: 2rem;
+}
+
+.card-img img {
+  display: block;
+  width: 100%;
+  width: 50px;
+  margin: .1em auto;
+}
+
+.buy-btn {
+  font-size: .8rem;
+  background-color: #ff5c6f;
+  border-radius: 4px;
+  padding: .5em;
+}
+
+.buy-btn:hover {
+  background-color: #a23f42;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.card-img {
+  border: solid 4px #ffa6a6;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+footer {
+  background-color: #ff5c6f;
+  padding: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+
 
 @media only screen and (min-width: 25em) {
 
@@ -298,16 +363,9 @@ header h1 {
     width: 33.333%;
   }
 
-  .flavour-nav {
+  .featured-nav ul {
+    flex-direction: row;
     flex-wrap: nowrap;
-  }
-
-  .flavour-nav li {
-    width: 25%;
-  }
-
-  .flavour-nav ul {
-    justify-content: space-around;
   }
 
 }
