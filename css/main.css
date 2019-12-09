@@ -84,9 +84,8 @@ header h1 {
 }
 
 .banner-content {
-  margin: 1rem;
+  margin-left: .5em;
   padding-bottom: 1rem;
-  max-width: 45em;
   width: 100%;
 }
 
@@ -94,7 +93,6 @@ header h1 {
   align-items: center;
   width: 100%;
   display: inline-block;
-  margin-left: 1rem;
 }
 
 .beau-logo {
@@ -121,7 +119,6 @@ header h1 {
   border-radius: 8px;
   background-color: #ff5c6f;
   padding: .6em .85em;
-  margin: 1rem 0;
 }
 
 .learn-btn {
@@ -361,7 +358,6 @@ footer {
   .banner-content {
     position: absolute;
     display: flex;
-    margin: auto;
     padding-bottom: 1rem;
     max-width: 45em;
     width: 100%;
